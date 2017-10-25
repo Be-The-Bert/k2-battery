@@ -1,0 +1,335 @@
+@font-face {
+  font-family: 'venus_risingregular';
+  src: url('fonts/webfontkit/venus_rising_rg-webfont.woff2') format('woff2'),
+       url('fonts/webfontkit/venus_rising_rg-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #bebebe;
+}
+h1 {
+  font-family: 'venus_risingregular', sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+}
+h2 {
+  font-family: 'venus_risingregular', sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+}
+p {
+  font-weight: 400;
+  font-size: .8rem;
+  line-height: 1.4rem;
+}
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+form {
+  width: 100%;
+  padding: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  color: #1f1f1f;
+  margin: 0 auto;
+}
+form > * {
+  margin: 15px 0;
+  width: 100%;
+  border: none;
+}
+input[type='radio'] {
+  color: #1f1f1f;
+  width: initial;
+  margin: 5px;
+}
+input[type='checkbox'] {
+  color: #1f1f1f;
+  width: initial;
+  margin: 5px;
+}
+input[type='text'] {
+  height: 50px;
+  background-color: #1f1f1f;
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: .9rem;
+  color: #bebebe;
+}
+input[type='email'] {
+  height: 50px;
+  background-color: #1f1f1f;
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: .9rem;
+  color: #bebebe;
+}
+input[type='submit'] {
+  height: 60px;
+  background-color: #8DC63F;
+  padding: 20px;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: .7rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: white;
+}
+.underline {
+  width: 150px;
+  height: 5px;
+  background-color: #8DC63F;
+}
+ul {
+  width: 100%;
+  list-style: circle;
+  text-align: left;
+  padding: 0 20px;
+}
+ul .underline {
+  margin: 8px -10px;
+}
+ul h3 {
+  font-size: .8rem;
+  font-family: 'venus_risingregular', sans-serif;
+  color: #fff;
+  margin: 8px -10px;
+}
+li {
+  margin: 2px 8px;
+  font-size: 0.8rem;
+}
+ol {
+  width: 100%;
+  list-style: decimal;
+  text-align: left;
+  padding: 0 20px;
+}
+ol .underline {
+  margin: 8px -10px;
+}
+ol h3 {
+  font-size: .8rem;
+  font-family: 'venus_risingregular', sans-serif;
+  color: #fff;
+  margin: 8px -10px;
+}
+
+
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  margin: 5px 0;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 150px;
+}
+.first-menu-phone {
+  width: 60px;
+  height: 26px;
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.first-menu-phone p {
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  color: #fff;
+  letter-spacing: 3.5px;
+}
+.first-menu-phone img{
+  width: 0.7rem;
+}
+.first-menu-tablet {
+  display: none;
+  justify-content: space-around;
+}
+.first-menu-tablet a {
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 20px;
+  height: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first-menu-tablet a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+.first-menu-tablet a:hover {
+  color: #8DC63F;
+  border-bottom: solid .5px #8DC63F;
+}
+.first-menu-tablet a:active {
+  color: #8DC63F;
+}
+.content-wrapper {
+  height: 30vh;
+  padding: 3.5vh 5vw;
+  background-image: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.84)), url("./assets/Exterior-Final-Company-overview-Heroic-Image-1-360x195.jpg"); 
+  background-position: center; 
+  background-size: cover; 
+  background-repeat: repeat, no-repeat;
+  position: relative;
+}
+.page-title {
+  width: 304px;
+  height: 1.2rem;
+  position: absolute;
+  top: calc(15vh - .6rem);
+  left: calc(50vw - 152px);
+  text-align: center;
+}
+.second-menu-phone {
+  height: 8vh;
+  background-color: #2E2E2E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.second-menu-phone h3 {
+  font-size: 0.8rem;
+}
+.second-menu-tablet {
+  display: none;
+  background-color: #2E2E2E;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.second-menu-tablet a {
+  font-size: .85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #bebebe;
+  border-right: solid .5px #474747;
+  height: 4rem;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+  top: 0;
+}
+.second-menu-tablet a:last-child {
+  border: none;
+}
+.second-menu-tablet a:active {
+  color: #8DC63F;
+  text-decoration: none;
+}
+.second-menu-tablet a:hover {
+  color: #8DC63F;
+}
+.drop-icon {
+  position: absolute;
+  top: 7px;
+  right: 20px;
+  bottom: 0;
+  width: .7rem;
+  height: .7rem;
+  font-size: .7rem;
+  margin: auto;
+  transform: rotate(90deg);
+}
+.drop-icon:before {
+  content: "\276f";
+}
+
+.row {
+  background-image: url("./assets/black-grid-ptn.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content-block {
+  min-height: 70vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+}
+.content-block > * {
+  margin: 10px 0;
+}
+
+
+
+.content-img {
+  background-image: url("./assets/slider-image-2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vw;
+  width: 100vw;
+  margin: 0;
+}
+.form-box {
+  width: 100vw;
+}
+
+footer {
+  width: 100vw;
+  height: 30vh;
+  background-color: #202020;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+footer a {
+  color: #bebebe;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+.social {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+.social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #474747;
+  width: 32px;
+  height: 32px;
+}
+.social a:active {
+  background-color: #8DC63F;
+}
+.social a:hover {
+  background-color: #8DC63F;
+}
+.social img {
+  width: 16px;
+}
+.copywrite {
+  font-size: 0.8rem;
+}

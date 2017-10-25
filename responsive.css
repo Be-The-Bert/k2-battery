@@ -1,0 +1,158 @@
+
+@media (min-width: 600px) {
+  form {
+    width: 80%;
+  }
+  nav {
+    padding: 35px 40px;
+  }
+  nav img {
+    width: 175px;
+  }
+  .content-wrapper {
+    height: 40vh;
+  }
+  .page-title {
+    width: 390px;
+    font-size: 3rem;
+    height: 6rem;
+    top: calc(20vh - 3rem);
+    left: calc(50vw - 190px);
+  }
+  .second-menu-phone {
+    display: none;
+  }
+  .second-menu-tablet {
+    top: 0;
+    display: flex;
+  }
+  .content-block {
+    text-align: left;
+    align-items: flex-start;
+  }
+  .content-img {
+    height: calc(100vw - 80px);
+    width: calc(100vw - 80px);
+    margin: 40px;
+  }
+}
+
+@media (min-width: 750px) {
+  form {
+    width: 100%;
+  }
+  .content-wrapper {
+    height: 50vh;
+  }
+  .page-title {
+    top: calc(25vh - 3rem);
+    left: calc(50vw - 190px);
+  }
+  .row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+  }
+  .content-block {
+    width: 43vw;
+    margin: 0;
+  }
+  .content-img {
+    width: 43vw;
+    height: 43vw;
+    align-items: flex-start;
+    margin: 0;
+  }
+  .form-box {
+    width: 50vw;
+    margin: 0 auto;
+  }
+  footer {
+    position: relative;
+    height: 15vh;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+  footer > * {
+    margin: 20px;
+  }
+  .social {
+    position: absolute;
+    top: calc(50% - 32px);
+    right: 20px;
+  }
+}
+
+@media (min-width: 1000px) {
+  h2 {
+    font-size: 2rem;
+  }
+  ul h3 {
+    font-size: 1.2rem;
+  }
+  ol h3 {
+    font-size: 1.2rem;
+  }
+  form {
+    width: 80%;
+  }
+  .first-menu-phone {
+    display: none;
+  }
+  .first-menu-tablet {
+    display: flex;
+    padding: 22px;
+  }
+  .content-wrapper {
+    height: 70vh;
+  }
+  .page-title {
+    width: 650px;
+    font-size: 5rem;
+    height: 10rem;
+    /* position: absolute; */
+    top: calc(35vh - 5rem);
+    left: calc(50vw - 325px);
+  }
+  footer {
+    padding: 20px 70px;
+  }
+  .social {
+    right: 70px;
+  }
+}
+
+@media (min-width: 1400px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+  nav {
+    justify-content: center;
+  }
+  .first-menu-tablet {
+    padding: 22px 60px;
+  }
+  .content-wrapper {
+    height: 75vh;
+  }
+  .row {
+    justify-content: space-between;
+    padding: 0;
+  }
+  .content-block {
+    width: 40vw;
+    padding: 80px 0 80px 120px;
+  }
+  .content-img {
+    width: 50vw;
+    height: 50vw;
+  }
+  footer {
+    padding: 20px 120px;
+  }
+  .social {
+    right: 120px;
+  }
+}
