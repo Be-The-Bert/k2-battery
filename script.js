@@ -39,7 +39,6 @@ function drop() {
   }
 }
 function hover(i) {
-  console.log(i)
   var menu = document.getElementsByClassName('hover')[i];
   if (menu.classList.value.includes('hide-hover')) {
     menu.classList.remove('hide-hover');
@@ -47,17 +46,29 @@ function hover(i) {
     menu.classList.add('hide-hover')
   }
 }
-var thirdlevelclick = document.getElementsByClassName('hover-click')
-for (let i = 0; i < thirdlevelclick.length; i++) {
-  thirdlevelclick[i].onclick = function() {hover(i)};
+function addhover(i) {
+  var menu = document.getElementsByClassName('test')[i];
+  menu.classList.remove('hide-hover')
 }
-var thirdlevelhover = document.getElementsByClassName('hover-hover')
-for (let i = 0; i < thirdlevelhover.length; i++) {
-  thirdlevelhover[i].onpointerenter = function() {hover(i)};
+function removehover(i) {
+  var menu = document.getElementsByClassName('test')[i];
+  menu.classList.add('hide-hover');
 }
+
+
 document.body.onscroll = scroll;
 document.getElementById('hamburger-click').onclick = slide;
 document.getElementById('drop-click').onclick = drop;
-// document.getElementById('hover-click').onclick = hover;
-// document.getElementById('hover-click').onmouseenter = hover;
+
+var thirdlevelclick = document.getElementsByClassName('hover-click')
+for (let i = 0; i < thirdlevelclick.length; i++) {
+  thirdlevelclick[i].onclick = function () { hover(i) };
+}
+var thirdlevelhover = document.getElementsByClassName('hover-hover')
+
+for (let i = 0; i < thirdlevelhover.length; i++) {
+  thirdlevelhover[i].onpointerenter = function () { addhover(i) };
+  thirdlevelhover[i].onpointerleave = function () { removehover(i) };
+}
+
 

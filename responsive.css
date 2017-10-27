@@ -10,7 +10,7 @@
     width: 175px;
   }
   .first-menu-phone-box {
-    height: 85vh;
+    height: 88vh;
     width: 65vw;
   }    
   .content-wrapper {
@@ -23,12 +23,9 @@
     top: calc(20vh - 3rem);
     left: calc(50vw - 190px);
   }
-  .second-menu-phone {
-    display: none;
-  }
-  .second-menu-tablet {
-    top: 0;
+  .hover-links {
     display: flex;
+    background-color: transparent;
   }
   .content-block {
     text-align: left;
@@ -93,6 +90,13 @@
 }
 
 @media (min-width: 1000px) {
+  .second-menu-phone {
+    display: none;
+  }
+  .second-menu-tablet {
+    top: 0;
+    display: flex;
+  }
   h2 {
     font-size: 2rem;
   }
@@ -122,6 +126,27 @@
     /* position: absolute; */
     top: calc(35vh - 5rem);
     left: calc(50vw - 325px);
+  }
+  .hover-container {
+    position: relative;
+  }
+  .hover-box {
+    width: 30vw;
+    position: absolute;
+    top: 4rem;
+    z-index: 4;
+    background-image: none;
+    background-color: #8DC63F;
+    color: #fff;
+  }
+  .hover-box > a:visited {
+    color: #fff;
+  }
+  .hover-box > a:hover {
+    color: #000;
+  }
+  .drop-icon{
+    display: none;
   }
   footer {
     padding: 20px 70px;
