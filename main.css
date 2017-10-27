@@ -6,6 +6,9 @@
   font-style: normal;
 }
 
+.test {
+  background-color: blue;
+}
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -123,16 +126,37 @@ ol h3 {
 
 
 nav {
-  position: fixed;
+  /* height: 150px; */
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
-  margin: 5px 0;
+  z-index: 3;
+  margin: 0 0 5px 0;
   padding: 20px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* transition: .2s; */
+}
+.nav_background {
+  background-color: #fff;
+  transition: .3s;
+  color: #000;
+  position: fixed;
+  height: 50px;
+}
+.nav_hide {
+  top: -100px;
+  opacity: 0;
+}
+.nav_gone {
+  top: 0;
+  position: fixed;
+  height: 0;
+  /* overflow: hidden; */
+  opacity: 0;
+  transition: .6s;
 }
 nav img {
   width: 150px;
@@ -145,10 +169,37 @@ nav img {
   justify-content: space-between;
   align-items: center;
 }
+.first-menu-phone-box {
+  width: 100vw;
+  height: 90vh;
+  background-image: url("./assets/black-grid-ptn.jpg");
+  /* background-color: #8DC63F; */
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+  transition: .5s;
+  text-transform: uppercase;
+  letter-spacing: .7px;
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px;
+  font-size: .7rem;
+}
+.first-menu-phone-box > * {
+  margin: 17px;
+  text-decoration: none;
+}
+.hide-slide {
+  right: -100vw;
+}
 .first-menu-phone p {
   text-transform: uppercase;
   font-size: 0.65rem;
-  color: #fff;
+  /* color: #fff; */
   letter-spacing: 3.5px;
 }
 .first-menu-phone img{
@@ -159,7 +210,7 @@ nav img {
   justify-content: space-around;
 }
 .first-menu-tablet a {
-  color: #fff;
+  /* color: #fff; */
   font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -171,7 +222,7 @@ nav img {
   align-items: center;
 }
 .first-menu-tablet a:visited {
-  color: #fff;
+  /* color: #fff; */
   text-decoration: none;
 }
 .first-menu-tablet a:hover {
@@ -189,6 +240,7 @@ nav img {
   background-size: cover; 
   background-repeat: repeat, no-repeat;
   position: relative;
+  z-index: 2;
 }
 .page-title {
   width: 304px;
@@ -198,6 +250,9 @@ nav img {
   left: calc(50vw - 152px);
   text-align: center;
 }
+.second-menu-phone-container {
+  position: relative;
+} 
 .second-menu-phone {
   height: 8vh;
   background-color: #2E2E2E;
@@ -205,9 +260,72 @@ nav img {
   justify-content: center;
   align-items: center;
   position: relative;
+  z-index: 2;
+}
+.second-menu-phone-box {
+  width: 100vw;
+  /* min-height: 30vh; */
+  /* background-image: url("./assets/black-grid-ptn.jpg"); */
+  background-color: #8DC63F;
+  position: absolute;
+  top: 8vh;
+  /* z-index: 1; */
+  transition: 1s;
+  text-transform: uppercase;
+  letter-spacing: .7px;
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding: 20px 0;
+  font-size: .7rem;
+  overflow: hidden;
+}
+
+.hide-drop {
+  top: -100vh;
+  /* height: 0; */
+  /* bottom: 16vh; */
 }
 .second-menu-phone h3 {
   font-size: 0.8rem;
+}
+.hover-links {
+  display: flex;
+  width: 100%;
+  height: 45px;
+  position: relative;
+  background-color: #8DC63F;
+  z-index: 1;
+}
+.hover-links > a {
+  margin: 17px;
+  text-decoration: none;
+}
+.hover-box {
+  width: 100%;
+  /* height: 30vh; */
+  background-image: url('./assets/black-grid-ptn.jpg');
+  padding: 25px;
+  transition: 1s;
+  text-transform: uppercase;
+  letter-spacing: .7px;
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  font-size: .7rem;
+  /* position: absolute;
+  top: 45px; */
+}
+.hover-box > a {
+  margin: 10px;
+  text-decoration: none;
+}
+.hide-hover {
+  display: none;
 }
 .second-menu-tablet {
   display: none;

@@ -9,6 +9,10 @@
   nav img {
     width: 175px;
   }
+  .first-menu-phone-box {
+    height: 85vh;
+    width: 65vw;
+  }    
   .content-wrapper {
     height: 40vh;
   }
@@ -44,6 +48,9 @@
   .content-wrapper {
     height: 50vh;
   }
+  .first-menu-phone-box {
+    width: 50vw;
+  }    
   .page-title {
     top: calc(25vh - 3rem);
     left: calc(50vw - 190px);

@@ -17,35 +17,83 @@
 <body>
   <header>
     <nav>
-      <a href="https://k2battery.com/"><img src="./assets/K2_Logo.png"></a>
-      <div class='first-menu-phone'>
+      <a href="https://k2battery.com/">
+        <img id='logo_img' src="./assets/K2_Logo.png">
+      </a>
+      <div id='hamburger-click' class='first-menu-phone'>
         <p>Menu</p>
         <img src='./assets/hamburger.svg' alt='menu'>
       </div>
       <div class='first-menu-tablet'>
-          <a href="https://k2battery.com/technology/">Technology</a>
-          <a href="https://k2battery.com/products/">Products</a>
-          <a href="https://k2battery.com/about/">About</a>
-          <a href="https://k2battery.com/store/">Store</a>
-          <a href="https://k2battery.com/resources/">Resources</a>
-          <a href="https://k2battery.com/contact/">Contact Us</a>
-          <a href="https://k2battery.com/request-a-data-sheet/">Request a Data Sheet</a>
-          <a href="#">Investor Relations</a>
-        </div>
+        <a href="https://k2battery.com/technology/">Technology</a>
+        <a href="https://k2battery.com/products/">Products</a>
+        <a href="https://k2battery.com/about/">About</a>
+        <a href="https://k2battery.com/store/">Store</a>
+        <a href="https://k2battery.com/resources/">Resources</a>
+        <a href="https://k2battery.com/contact/">Contact Us</a>
+        <a href="https://k2battery.com/request-a-data-sheet/">Request a Data Sheet</a>
+        <a href="#">Investor Relations</a>
+      </div>
     </nav>
+    <div id='hamburger' class='first-menu-phone-box hide-slide'>
+      <a href="https://k2battery.com/technology/">Technology</a>
+      <a href="https://k2battery.com/products/">Products</a>
+      <a href="https://k2battery.com/about/">About</a>
+      <a href="https://k2battery.com/store/">Store</a>
+      <a href="https://k2battery.com/resources/">Resources</a>
+      <a href="https://k2battery.com/contact/">Contact Us</a>
+      <a href="https://k2battery.com/request-a-data-sheet/">Request a Data Sheet</a>
+      <a href="#">Investor Relations</a>
+    </div>
     <div class="content-wrapper">
       <h1 class="page-title">Investor Relations</h1>
     </div>
-    <div class='second-menu-phone'>
-      <h3>Drop Down secondary menu</h3>
-      <div class="drop-icon"></div>
+    <div class='second-menu-phone-container'>
+      <div class='second-menu-phone'>
+        <h3>Drop Down secondary menu</h3>
+        <div id='drop-click' class="drop-icon"></div>
+      </div>
+      <div id='drop' class='second-menu-phone-box hide-drop'>
+        <div class='hover-container'>
+          <div class='hover-links'>
+            <a href="#">Example</a>
+            <div class="hover-click drop-icon"></div>
+          </div>
+          <div class='hover hover-box hide-hover'>
+            <a href='#'>Different Example Text drop</a>
+            <a href='#'>Different Example Text drop</a>
+            <a href='#'>Different Example Text drop</a>
+            <a href='#'>Different Example Text drop</a>
+          </div>
+        </div>
+        <div class='hover-container'>
+          <div class='hover-links'>
+            <a href="#">Example</a>
+            <div class="hover-click drop-icon"></div>
+          </div>
+          <div class='hover hover-box hide-hover'>
+            <a href='#'>Different Example Text drop</a>
+            <a href='#'>Different Example Text drop</a>
+            <a href='#'>Different Example Text drop</a>
+            <a href='#'>Different Example Text drop</a>
+          </div>
+        </div>
+      </div>
     </div>
     <div class='second-menu-tablet'>
-      <a href="#">Example Text</a>
-      <a href="#">Different Example Text</a>
-      <a href="#">Example</a>
-      <a href="#">Another Different One</a>
-      <a href="#">Example</a>
+      <div class='hover-container'>
+        <a class='hover-hover' href="#">Example Text</a>
+        <div class='hover hover-box hide-hover'>
+          <a href='#'>Different Example Text drop</a>
+          <a href='#'>Different Example Text drop</a>
+          <a href='#'>Different Example Text drop</a>
+          <a href='#'>Different Example Text drop</a>
+        </div>
+      </div>
+      <a class='hover-hover' href="#">Different Example Text</a>
+      <a class='hover-hover' href="#">Example</a>
+      <a class='hover-hover' href="#">Another Different One</a>
+      <a class='hover-hover' href="#">Example</a>
     </div>
   </header>
   <main>
@@ -53,10 +101,11 @@
       <div class="content-block">
         <h2>Content Header</h2>
         <div class="underline"></div>
-        <p>With a lot of descriptive text in it. With a lot of descriptive text in it. With a lot of descriptive text in it. With
-            a lot of descriptive text in it. With a lot of descriptive text in it. With a lot of descriptive text in it. With
-            a lot of descriptive text in it. With a lot of descriptive text in it. With a lot of descriptive text in it. With
-            a lot of descriptive text in it. With a lot of descriptive text in it. With a lot of descriptive text in it. </p>
+        <p>With a lot of descriptive text in it. With a lot of descriptive text in it. With a lot of descriptive text in it.
+          With a lot of descriptive text in it. With a lot of descriptive text in it. With a lot of descriptive text in it.
+          With a lot of descriptive text in it. With a lot of descriptive text in it. With a lot of descriptive text in it.
+          With a lot of descriptive text in it. With a lot of descriptive text in it. With a lot of descriptive text in it.
+        </p>
         <ul>
           <h3>Unordered</h3>
           <div class='underline'></div>
@@ -112,6 +161,7 @@
     </div>
     <div class="copywrite">©2016 k2battery.com</div>
   </footer>
+  <script src='./script.js'></script>
 </body>
 
 </html>
