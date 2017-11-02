@@ -5,10 +5,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
-.test {
-  background-color: blue;
-}
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -28,6 +24,9 @@ p {
   font-weight: 400;
   font-size: .8rem;
   line-height: 1.4rem;
+}
+a {
+  color: #fff;
 }
 a:visited {
   color: inherit;
@@ -147,6 +146,9 @@ nav {
   position: fixed;
   height: 50px;
 }
+.nav_background a {
+  color: #000;
+}
 .nav_hide {
   top: -100px;
   opacity: 0;
@@ -211,7 +213,7 @@ nav img {
   justify-content: space-around;
 }
 .first-menu-tablet a {
-  /* color: #fff; */
+  /* color: #000; */
   font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
