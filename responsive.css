@@ -131,9 +131,10 @@
     position: relative;
   }
   .hover-box {
-    width: 30vw;
+    width: 20vw;
     position: absolute;
     top: 4rem;
+    left: calc(50% - 10vw);
     z-index: 4;
     background-image: none;
     background-color: #8DC63F;

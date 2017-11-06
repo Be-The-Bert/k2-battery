@@ -1,4 +1,6 @@
+console.log('greetings')
 function scroll() {
+  // console.log('scroll')
   var nav = document.getElementsByTagName('nav')[0]
   var logo = document.getElementById('logo_img')
   var offY = window.pageYOffset;
@@ -24,6 +26,7 @@ function scroll() {
 }
 function slide() {
   var menu = document.getElementById('hamburger');
+  console.log(menu.classList);
   if (menu.classList.value.includes('hide-slide')) {
     menu.classList.remove('hide-slide');
   } else {
@@ -46,17 +49,8 @@ function hover(i) {
     menu.classList.add('hide-hover')
   }
 }
-function addhover(i) {
-  var menu = document.getElementsByClassName('test')[i];
-  menu.classList.remove('hide-hover')
-}
-function removehover(i) {
-  var menu = document.getElementsByClassName('test')[i];
-  menu.classList.add('hide-hover');
-}
 
-
-document.body.onscroll = scroll;
+window.onscroll = scroll;
 document.getElementById('hamburger-click').onclick = slide;
 document.getElementById('drop-click').onclick = drop;
 
@@ -64,11 +58,7 @@ var thirdlevelclick = document.getElementsByClassName('hover-click')
 for (let i = 0; i < thirdlevelclick.length; i++) {
   thirdlevelclick[i].onclick = function () { hover(i) };
 }
-var thirdlevelhover = document.getElementsByClassName('hover-hover')
 
-for (let i = 0; i < thirdlevelhover.length; i++) {
-  thirdlevelhover[i].onpointerenter = function () { addhover(i) };
-  thirdlevelhover[i].onpointerleave = function () { removehover(i) };
-}
+
 
 
