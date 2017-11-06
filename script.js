@@ -1,6 +1,4 @@
-console.log('greetings')
 function scroll() {
-  // console.log('scroll')
   var nav = document.getElementsByTagName('nav')[0]
   var logo = document.getElementById('logo_img')
   var offY = window.pageYOffset;
@@ -26,31 +24,27 @@ function scroll() {
 }
 function slide() {
   var menu = document.getElementById('hamburger');
-  console.log(menu.classList);
-  if (menu.classList.value.includes('hide-slide')) {
-    menu.classList.remove('hide-slide');
+  if (menu.className.indexOf('hide-slide') > 0) {
+    menu.className = menu.className.replace(/\b hide-slide\b/g, "");
   } else {
-    menu.classList.add('hide-slide')
+    menu.className = menu.className + ' hide-slide' 
   }
 }
-function drop() {
+function drop(event) {
   var menu = document.getElementById('drop');
-  if (menu.classList.value.includes('hide-drop')) {
-    menu.classList.remove('hide-drop');
+  if (menu.className.indexOf('hide-drop') > 0) {
+    menu.className = menu.className.replace(/\b hide-drop\b/g, "");
   } else {
-    menu.classList.add('hide-drop')
+    menu.className = menu.className + ' hide-drop' 
   }
 }
 function hover(i) {
   var menu = document.getElementsByClassName('hover')[i];
-  if (menu.classList.value.includes('hide-hover')) {
-    console.log('includes')
-    menu.classList.remove('hide-hover');
+  if (menu.className.indexOf('hide-hover') > 0) {
+    menu.className = menu.className.replace(/\b hide-hover\b/g, "");;
   } else {
-    console.log('does not inlude')
-    menu.classList.add('hide-hover')
+    menu.className = menu.className + ' hide-hover' 
   }
-  console.log(menu.classList)
 }
 
 window.onscroll = scroll;
@@ -58,9 +52,11 @@ document.getElementById('hamburger-click').onclick = slide;
 document.getElementById('drop-click').onclick = drop;
 
 var thirdlevelclick = document.getElementsByClassName('hover-click')
-for (let i = 0; i < thirdlevelclick.length; i++) {
-  thirdlevelclick[i].onclick = function () { hover(i) };
-}
+thirdlevelclick[0].onclick = function () { hover(0) };
+thirdlevelclick[1].onclick = function () { hover(1) };
+thirdlevelclick[2].onclick = function () { hover(2) };
+thirdlevelclick[3].onclick = function () { hover(3) };
+thirdlevelclick[4].onclick = function () { hover(4) };
 
 
 

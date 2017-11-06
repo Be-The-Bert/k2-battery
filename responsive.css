@@ -123,7 +123,6 @@
     width: 650px;
     font-size: 5rem;
     height: 10rem;
-    /* position: absolute; */
     top: calc(35vh - 5rem);
     left: calc(50vw - 325px);
   }

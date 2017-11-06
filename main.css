@@ -21,9 +21,11 @@ h2 {
   color: #fff;
 }
 p {
+  max-width: 95%;
   font-weight: 400;
   font-size: .8rem;
   line-height: 1.4rem;
+  overflow-wrap: break-word;
 }
 a {
   color: #fff;
@@ -45,28 +47,15 @@ form > * {
   width: 100%;
   border: none;
 }
-input[type='radio'] {
+input[type='radio'], input[type='checkbox'] {
   color: #1f1f1f;
-  width: initial;
+  width: 15px;
   margin: 5px;
 }
-input[type='checkbox'] {
-  color: #1f1f1f;
-  width: initial;
-  margin: 5px;
-}
-input[type='text'] {
+input[type='text'], input[type='email'] {
   height: 50px;
   background-color: #1f1f1f;
-  padding: 20px;
-  font-family: "Open Sans", sans-serif;
-  font-size: .9rem;
-  color: #bebebe;
-}
-input[type='email'] {
-  height: 50px;
-  background-color: #1f1f1f;
-  padding: 20px;
+  padding-left: 20px;
   font-family: "Open Sans", sans-serif;
   font-size: .9rem;
   color: #bebebe;
@@ -125,7 +114,6 @@ ol h3 {
 
 
 nav {
-  /* height: 150px; */
   position: absolute;
   top: 0;
   left: 0;
@@ -136,7 +124,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* transition: .2s; */
   color: #fff;
 }
 .nav_background {
@@ -157,9 +144,8 @@ nav {
   top: 0;
   position: fixed;
   height: 0;
-  /* overflow: hidden; */
   opacity: 0;
-  transition: .6s;
+  transition: 1s;
 }
 nav img {
   width: 150px;
@@ -173,10 +159,9 @@ nav img {
   align-items: center;
 }
 .first-menu-phone-box {
-  width: 100vw;
+  width: 100%;
   height: 90vh;
   background-image: url("./assets/black-grid-ptn.jpg");
-  /* background-color: #8DC63F; */
   position: fixed;
   bottom: 0;
   right: 0;
@@ -202,7 +187,6 @@ nav img {
 .first-menu-phone p {
   text-transform: uppercase;
   font-size: 0.65rem;
-  /* color: #fff; */
   letter-spacing: 3.5px;
 }
 .first-menu-phone img{
@@ -213,7 +197,6 @@ nav img {
   justify-content: space-around;
 }
 .first-menu-tablet a {
-  /* color: #000; */
   font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -225,7 +208,6 @@ nav img {
   align-items: center;
 }
 .first-menu-tablet a:visited {
-  /* color: #fff; */
   text-decoration: none;
 }
 .first-menu-tablet a:hover {
@@ -266,13 +248,10 @@ nav img {
   z-index: 2;
 }
 .second-menu-phone-box {
-  width: 100vw;
-  /* min-height: 30vh; */
-  /* background-image: url("./assets/black-grid-ptn.jpg"); */
+  width: 100%;
   background-color: #8DC63F;
   position: absolute;
   top: 8vh;
-  /* z-index: 1; */
   transition: 1s;
   text-transform: uppercase;
   letter-spacing: .7px;
@@ -280,7 +259,6 @@ nav img {
   color: #fff;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   padding: 20px 0;
   font-size: .7rem;
   overflow: hidden;
@@ -288,15 +266,12 @@ nav img {
 
 .hide-drop {
   top: -100vh;
-  /* height: 0; */
-  /* bottom: 16vh; */
 }
 .second-menu-phone h3 {
   font-size: 0.8rem;
 }
 .hover-links {
   display: flex;
-  /* width: 100%; */
   height: 45px;
   position: relative;
   background-color: #8DC63F;
@@ -312,20 +287,15 @@ nav img {
 }
 .hover-box {
   width: 100%;
-  /* height: 30vh; */
   background-image: url('./assets/black-grid-ptn.jpg');
   padding: 25px;
-  /* transition: 1s; */
   text-transform: uppercase;
   letter-spacing: .7px;
   font-weight: 600;
   color: #fff;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   font-size: .7rem;
-  /* position: absolute;
-  top: 45px; */
 }
 .hover-box > a {
   margin: 10px;
@@ -356,7 +326,6 @@ nav img {
   letter-spacing: 1px;
   color: #bebebe;
   border-right: solid .5px #474747;
-  /* border-left: solid .5px #474747; */
   height: 4rem;
   padding: 0 20px;
   display: flex;
@@ -396,6 +365,7 @@ nav img {
 }
 .content-block {
   min-height: 70vh;
+  width: 50%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -414,15 +384,15 @@ nav img {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vw;
-  width: 100vw;
+  width: 100%;
   margin: 0;
 }
 .form-box {
-  width: 100vw;
+  width: 100%;
 }
 
 footer {
-  width: 100vw;
+  width: 100%;
   height: 30vh;
   background-color: #202020;
   padding: 30px 0;
