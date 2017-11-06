@@ -44,10 +44,13 @@ function drop() {
 function hover(i) {
   var menu = document.getElementsByClassName('hover')[i];
   if (menu.classList.value.includes('hide-hover')) {
+    console.log('includes')
     menu.classList.remove('hide-hover');
   } else {
+    console.log('does not inlude')
     menu.classList.add('hide-hover')
   }
+  console.log(menu.classList)
 }
 
 window.onscroll = scroll;

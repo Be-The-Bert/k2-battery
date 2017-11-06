@@ -139,6 +139,10 @@
     background-image: none;
     background-color: #8DC63F;
     color: #fff;
+    display: none;
+  }
+  .hover-container:hover .hover-box {
+    display: flex;
   }
   .hover-box > a:visited {
     color: #fff;
